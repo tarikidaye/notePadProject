@@ -2,10 +2,6 @@ from tkinter import *
 from tkinter import messagebox
 
 
-
-
-
-
 def save_button():
     note = note_text.get("1.0", END)
     title = title_entry.get()
@@ -22,13 +18,6 @@ def save_button():
         finally:
             title_entry.delete(0,END)
             note_text.delete("1.0",END)
-
-
-
-
-
-
-
 
 
 
@@ -54,21 +43,6 @@ note_text.place(x=0,y=40)
 save_button = Button(text="Save", command=save_button)
 save_button.place(x=150,y=0)
 #save_button.pack()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
